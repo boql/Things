@@ -1226,6 +1226,19 @@ end)
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
+-- BEGIN OF HUB SECTION
+
+
+
 local Section = Tab:CreateSection("Hubs")
 
 local Button = Tab:CreateButton({
@@ -1254,6 +1267,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/L
 })
 
 
+
 -- SCRIPT SECTION ENDS HERE
 
 local Tab = Window:CreateTab("Misc", 4483362458) -- Title, Image
@@ -1263,7 +1277,7 @@ getgenv().esp = false
 getgenv().teamcheck = false
 getgenv().Color = Color3.fromRGB(255, 0, 0)
 local Toggle = Tab:CreateToggle({
-   Name = "Toggle Example",
+   Name = "ESP",
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -1328,5 +1342,13 @@ local Toggle = Tab:CreateToggle({
 getgenv().teamcheck = Value
    -- The function that takes place when the toggle is pressed
    -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+Rayfield:Destroy()
+   -- The function that takes place when the button is pressed
    end,
 })
