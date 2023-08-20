@@ -1227,7 +1227,7 @@ end)
 })
 
 local Button = Tab:CreateButton({
-   Name = "Basic Sword AI",
+   Name = "Basic Sword AI (Press X to activate)",
    Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/yeerma/1/main/bot'))()
    -- The function that takes place when the button is pressed
